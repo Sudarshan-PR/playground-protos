@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+option go_package = "github.com/Sudarshan-PR/playground/notifications/receiver";
+
+message NotificationRequest {
+    string output = 1;
+    string type = 2;
+}
+
+message NotificationResponse {
+    bool sent = 1;
+}
+
+service Notification {
+    rpc PushNotification(NotificationRequest) returns (NotificationResponse);
+}
