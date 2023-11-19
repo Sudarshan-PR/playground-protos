@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-option go_package = "github.com/Sudarshan-PR/playground/notifications/receiver";
+option go_package = "github.com/Sudarshan-PR/playground-protos/notifications-protos";
 
 message NotificationRequest {
     string output = 1;
