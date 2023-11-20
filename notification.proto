@@ -5,10 +5,12 @@ option go_package = "github.com/Sudarshan-PR/playground-protos/notifications-pro
 message NotificationRequest {
     string output = 1;
     string type = 2;
+    string userid = 3;
 }
 
 message NotificationResponse {
     bool sent = 1;
+    string error = 2;
 }
 
 service Notification {
